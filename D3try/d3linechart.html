@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <head>
 	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-		
-</head>
-<body>
 	<style type="text/css">
 		.axis path,
 		.axis line{
@@ -15,7 +12,54 @@
 			font-family: sans-serif;
 			font-size: 11px;
 		}
+		.overlay {
+			fill: none;
+			pointer-events: all;
+		}
+		.tooltip {
+			position: absolute;
+			width: 120;
+			height: auto;
+			font-family: simsun;
+			font-size: 14px;
+			text-align: center;
+			color: white;
+			border-width: 2px solid black;
+			background-color: black;
+			border-radius: 5px;
+		}
+		.tooltip .title {
+			border-bottom: 1px solid #000;
+			text-align: center;
+		}
+		.tooltip .desColor {
+			width: 10px;
+			height: 10px;
+			float: left;
+			margin: 9px 8px 1px 8px;
+		}
+
 	</style>
+	<!--.tooltip .desText {
+			display: inline;
+		}	 -->	
+</head>
+<body>
+
+
 	<script src="./jsfile/d3linechart.js" charset="urf-8"></script>
 
 </body>
+<!--
+	<div class="tooltip">
+		<div class="title"></div>
+		<div>
+			<div class="desColor"></div>
+			<div class="desText"></div>
+		</div>
+		<div>
+			<div class="desColor"></div>
+			<div class="desText"></div>
+		</div>
+	</div>
+>
